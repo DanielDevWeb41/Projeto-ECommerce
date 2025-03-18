@@ -89,7 +89,7 @@ body {
 }
 
 
-@media(max-width: 505px) {
+@media(max-width: 567px) {
     .main .topNav p{
         font-size: 7px;
         margin-left: 2px;
@@ -108,7 +108,7 @@ body {
 
 @media(max-width: 437px) {
     .main .topNav p{
-        font-size: 5px;
+        font-size: 6px;
         margin-left: 2px;
     }
     .main .topNav ul li{
@@ -118,7 +118,7 @@ body {
         font-size: 11px;
     }
     .main .topNav ul li ul.drop li{
-        font-size: 7px;
+        font-size: 8px;
     }
 }
 
@@ -240,4 +240,39 @@ body {
     .nav ul li ul.drop-down li a{
         color: #000000;
     }
+}
+
+@media(max-width: 600px){
+    .navbar {
+        padding: 10px 0px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    #bar {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 400px){
+    .logo {
+        margin-left: 7px;
+    }
+    #bar {
+        margin-right: 7px;
+    }
+}
+
+@media(max-width: 343px) {
+    .nav {
+        width: 200px;
+    }
+}
+/*FIM NAVBAR*/
+
+.content {
+    width: 100%;
+    min-height: 840px;
+    background-image: url(../img/hero-1.jpg);
+    background-position: center;
 }
