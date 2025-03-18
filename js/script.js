@@ -69,4 +69,23 @@ links[0].onclick = function () {
     })
 }
 
+// timer
+
+let counDownDate = new Date("mar 20,2025 23:33:50").getTime()
+
+let counter = setInterval(() => {
+    let dateNow = new Date().getTime() 
+
+    let dateDiff = counDownDate - dateNow 
+
+    let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24)) 
+    let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60))
+    let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000)
+    document.querySelector(".days").innerHTML = `${days}: `
+    document.querySelector(".hours").innerHTML = `${hours}: `
+    document.querySelector(".minutes").innerHTML = `${minutes}: `
+    document.querySelector(".seconds").innerHTML = seconds
+
+})
 

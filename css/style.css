@@ -532,3 +532,267 @@ body {
         font-size: 0.9rem;
     }
 }
+
+
+/* INICIANDO TIMER */
+
+.sale-weak {
+    width: 100%;
+    min-height: 600px;
+    background: #f3f2ee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #b7b7b7;
+    line-height: 60px;
+}
+
+.title .show{
+    color: #000000;
+}
+
+.img .sales{
+    background: #000000;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.img .sales h4{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.img .sales h4 span{
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.timer h3{
+    color: #e53637;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.timer h2{
+    font-size: 2.6rem;
+    line-height: 60px;
+    font-weight: 100;
+}
+
+.timer ul {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.timer ul li{
+    margin-left: 20px;
+}
+
+.timer ul li span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.timer ul li h1{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.timerBtn{
+    padding: 16px 35px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE SALE */
+
+@media(max-width:960px) {
+    .sale-weak{
+        display: block;
+        text-align: center;
+        padding: 40px 0px;
+    }
+    .img {
+        margin: auto;
+        width: 100%;
+    }
+    .sales{
+        margin: auto;
+    }
+    .timer ul{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    .img img{
+        width: 470px;
+    }
+    .timer{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:500px){
+    .img img{
+        width: 400px;
+    }
+    .timer h2{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+}
+
+@media(max-width:415px){
+    .img img{
+        width: 300px;
+    }
+}
+
+@media(max-width:342px){
+    .timer ul li span {
+        font-size: 1.7rem;
+    }
+
+    .timer ul li h1{
+        font-size: 0.6rem;
+    }
+    .title h1{
+        font-size: 1.7rem;
+    }
+    .timer h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* INICIANDO INSTAGRAM SECTION */
+
+.instagram{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 70px;
+}
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inst-content {
+    transform: translateY(130px);
+    margin-left: 50px;
+}
+
+.inst-content h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.inst-content p{
+    width: 370px;
+    color: #3d3d3d;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+.inst-content h2 {
+    color: #e53637;
+    font-size: 2rem;
+}
+
+
+@media(max-width: 1280px){
+    .images img{
+        width: 200px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .images img{
+        width: 150px;
+    }
+    .inst-content{
+        transform: translateY(40px);
+    }
+}
+
+@media(max-width: 960px) {
+    .instagram {
+        grid-template-columns: 1fr;
+    }
+    .images img{
+        width: 271px;
+    }
+    .inst-content{
+        margin-left: 0px;
+    }
+    .inst-content p{
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .images img{
+        width: 200px;
+    }
+
+    .instagram{
+        padding: 70px 130px;
+    }
+    .inst-content p{
+        width: 70%;
+    }
+}
+
+@media(max-width: 757px){
+    .instagram {
+        padding: 70px 50px;
+    }
+}
+
+@media(max-width: 676px) {
+    .images img{
+        width: 150px;
+    }
+    .inst-content p{
+        width: 95%;
+    }
+}
+
+@media(max-width: 525px){
+    .instagram {
+        padding: 70px 10px;
+    }
+    .images img{
+        width: 120px;
+    }
+}
+
+@media(max-width: 390px) {
+    .images img{
+        width: 80px;
+    }
+}
